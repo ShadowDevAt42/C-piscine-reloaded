@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/14 13:55:46 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/14 14:17:08 by fdi-tria         ###   ########.fr       */
+/*   Created: 2024/09/14 14:21:50 by fdi-tria          #+#    #+#             */
+/*   Updated: 2024/09/14 14:26:10 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb)
+int	ft_strlen(char *str)
 {
-	if (nb < 0)
-		return (0);
-	if (nb == 0 || nb == 1)
-		return (1);
-	return (nb * ft_recursive_factorial(nb - 1));
+	int	length;
+
+	length = 0;
+	while (str[length] != '\0')
+		length++;
+	return (length);
 }
 
 /*#include <stdio.h>
 
 int	main(void)
 {
-	printf("Factorial of 5: %d\n", ft_recursive_factorial(5));   //120
-	printf("Factorial of 0: %d\n", ft_recursive_factorial(0));   //1
-	printf("Factorial of -5: %d\n", ft_recursive_factorial(-5)); //0
-	printf("Factorial of 10: %d\n", ft_recursive_factorial(10)); //3628800
+	char str1[] = "Hello, 42!";
+	char str2[] = "C'est cool d'apprendre la programmation.";
+	char str3[] = "";
+
+	printf("Length of '%s': %d\n", str1, ft_strlen(str1));
+	printf("Length of '%s': %d\n", str2, ft_strlen(str2));
+	printf("Length of an empty string: %d\n", ft_strlen(str3));
 	return (0);
 }*/
