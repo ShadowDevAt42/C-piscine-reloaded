@@ -1,5 +1,3 @@
-*.tar
-*.tar.*
 *.jar
 *.exe
 *.msi
@@ -11,6 +9,14 @@
 *.pdf
 *.out
 
+test1
+test3
+test4
+test5
+test6
+
+test0/
+test2/
 pkg/
 src/
 .vscode/
