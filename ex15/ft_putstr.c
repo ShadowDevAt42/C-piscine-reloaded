@@ -1,29 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/13 21:10:21 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/14 13:59:21 by fdi-tria         ###   ########.fr       */
+/*   Created: 2024/09/14 14:10:10 by fdi-tria          #+#    #+#             */
+/*   Updated: 2024/09/14 14:12:09 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+#include <unistd.h>
+
+void	ft_putchar(char c)
 {
-	*nbr = 42;
+	write(1, &c, 1);
 }
 
-#include <stdio.h>
-
-int	main(void)
+void	ft_putstr(char *str)
 {
-	int number;
+	int	i;
 
-	number = 0;  // Initialisation de la variable à 0
-	printf("Avant: %d\n", number);  // Affichage de la valeur avant la modification
-	ft_ft(&number);  // Appel de la fonction ft_ft en passant l'adresse de 'number'
-	printf("Après: %d\n", number);  // Affichage de la valeur après la modification
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}
+
+/*int	main(void)
+{
+	ft_putstr("Hello, 42!\n");
+	ft_putstr("Bienvenue dans l'exercice ft_putstr.\n");
 	return (0);
-}
+}*/
