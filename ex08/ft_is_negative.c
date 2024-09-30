@@ -6,16 +6,11 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 21:06:31 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/14 13:59:17 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2024/09/30 00:31:54 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
@@ -32,13 +27,13 @@ void	ft_is_negative(int n)
 /*int	main(void)
 {
 	ft_is_negative(-5);  // Devrait afficher 'N'
-	write(1, "\n", 1);   // Pour ajouter une nouvelle ligne après l'affichage
+	ft_putchar('\n');   // Pour ajouter une nouvelle ligne après l'affichage
 
 	ft_is_negative(0);   // Devrait afficher 'P'
-	write(1, "\n", 1);   // Pour ajouter une nouvelle ligne après l'affichage
+	ft_putchar('\n');   // Pour ajouter une nouvelle ligne après l'affichage
 
 	ft_is_negative(10);  // Devrait afficher 'P'
-	write(1, "\n", 1);   // Pour ajouter une nouvelle ligne après l'affichage
+	ft_putchar('\n');   // Pour ajouter une nouvelle ligne après l'affichage
 
 	return (0);
 }*/

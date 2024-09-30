@@ -9,6 +9,11 @@
 *.pdf
 *.out
 
+ft_putchar.c
+ft_display_file.o
+ft_display_file
+test.txt
+
 test1
 test3
 test4

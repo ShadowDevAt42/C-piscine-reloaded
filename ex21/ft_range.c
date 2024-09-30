@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 19:01:47 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/14 19:05:33 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2024/09/30 01:18:17 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	*ft_range(int min, int max)
 	if (min >= max)
 		return (NULL);
 	size = max - min;
-	range = (int *)malloc(size * sizeof(int));
+	range = malloc(size * sizeof(int));
 	if (range == NULL)
 		return (NULL);
 	i = 0;
@@ -33,32 +33,3 @@ int	*ft_range(int min, int max)
 	}
 	return (range);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	int min = 5;
-	int max = 10;
-	int *range;
-	int i;
-	int size;
-
-	range = ft_range(min, max);
-	if (range == NULL)
-	{
-		printf("NULL returned, invalid range!\n");
-		return (1);
-	}
-
-	size = max - min;
-	for (i = 0; i < size; i++)
-	{
-		printf("%d ", range[i]);
-	}
-	printf("\n");
-
-	free(range);
-
-	return (0);
-}*/

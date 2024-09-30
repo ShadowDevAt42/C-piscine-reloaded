@@ -6,16 +6,11 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 14:36:57 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/14 14:41:56 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2024/09/30 01:06:49 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 int	main(int argc, char **argv)
 {

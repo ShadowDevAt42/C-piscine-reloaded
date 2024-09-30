@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 21:20:45 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/13 21:36:01 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2024/09/30 00:34:59 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	main(void)
 	x = 42;
 	y = 21;
 	printf("Avant : x = %d, y = %d\n", x, y);
-	ft_swap(&x, &y);  // Appel de la fonction pour échanger les valeurs de x et y
+	ft_swap(&x, &y);
 	printf("Après : x = %d, y = %d\n", x, y);
 	return (0);
 }*/

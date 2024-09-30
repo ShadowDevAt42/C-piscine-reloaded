@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/14 13:55:46 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/30 00:53:53 by fdi-tria         ###   ########.fr       */
+/*   Created: 2024/09/30 01:38:38 by fdi-tria          #+#    #+#             */
+/*   Updated: 2024/09/30 02:09:22 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb)
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-	if (nb < 0)
-		return (0);
-	if (nb == 0 || nb == 1)
-		return (1);
-	return (nb * ft_recursive_factorial(nb - 1));
+	int	i;
+
+	i = 0;
+	while (i < length)
+	{
+		f(tab[i]);
+		i++;
+	}
 }
 
 /*#include <stdio.h>
 
+void	ft_putnbr(int nb)
+{
+	printf("%d\n", nb);
+}
+
 int	main(void)
 {
-	printf("Factorial of 5: %d\n", ft_recursive_factorial(5));   //120
-	printf("Factorial of 0: %d\n", ft_recursive_factorial(0));   //1
-	printf("Factorial of -5: %d\n", ft_recursive_factorial(-5)); //0
-	printf("Factorial of 10: %d\n", ft_recursive_factorial(10)); //3628800
+	int	tab[] = {1, 2, 3, 4, 5};
+
+	// Appel de ft_foreach pour afficher les éléments du tableau
+	ft_foreach(tab, 5, &ft_putnbr);
 	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 23:17:19 by fdi-tria          #+#    #+#             */
-/*   Updated: 2024/09/15 23:17:26 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2024/09/30 01:33:14 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 typedef struct s_point
 {
-    int x;
-    int y;
-} t_point;
+	int	x;
+	int	y;
+}	t_point;
 
 #endif
